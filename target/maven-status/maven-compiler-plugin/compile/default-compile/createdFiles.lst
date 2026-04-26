@@ -1,0 +1,13 @@
+auth\AuthManager.class
+utils\DataFactory.class
+client\ApiClient.class
+models\ErrorResponse.class
+models\User.class
+utils\ResponseUtils.class
+config\ConfigReader.class
+config\ConfigManager.class
+filters\RequestLoggingFilter.class
+utils\LoggerUtil.class
+utils\AllureRestFilter.class
+utils\ExtentManager.class
+filters\ResponseLoggingFilter.class

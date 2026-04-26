@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Delete created user","1550","deleteUserTest","API Suite","2026-04-26","passed","2026-04-26","tests.UserApiTests","User API Tests","tests.UserApiTests","deleteUserTest"
+"Fetch created user by ID","1522","getUserTest","API Suite","2026-04-26","passed","2026-04-26","tests.UserApiTests","User API Tests","tests.UserApiTests","getUserTest"
+"Validate invalid user ID returns error","6208","getInvalidUserTest","API Suite","2026-04-26","passed","2026-04-26","tests.UserApiTests","User API Tests","tests.UserApiTests","getInvalidUserTest"
+"Create a new user and store user ID","6842","createUserTest","API Suite","2026-04-26","passed","2026-04-26","tests.UserApiTests","User API Tests","tests.UserApiTests","createUserTest"
+"Update existing user details","965","updateUserTest","API Suite","2026-04-26","passed","2026-04-26","tests.UserApiTests","User API Tests","tests.UserApiTests","updateUserTest"
