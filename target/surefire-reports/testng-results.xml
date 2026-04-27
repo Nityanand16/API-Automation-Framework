@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-27T08:36:41 CEST" name="API Suite" finished-at="2026-04-27T08:36:50 CEST" duration-ms="8870">
+  <suite started-at="2026-04-27T08:46:54 CEST" name="API Suite" finished-at="2026-04-27T08:47:02 CEST" duration-ms="8576">
     <groups>
     </groups>
-    <test started-at="2026-04-27T08:36:41 CEST" name="User API Tests" finished-at="2026-04-27T08:36:50 CEST" duration-ms="8870">
+    <test started-at="2026-04-27T08:46:54 CEST" name="User API Tests" finished-at="2026-04-27T08:47:02 CEST" duration-ms="8576">
       <class name="tests.UserApiTests">
-        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:41 CEST" name="setupUser" finished-at="2026-04-27T08:36:48 CEST" duration-ms="6536" status="PASS">
+        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:46:54 CEST" name="setupUser" finished-at="2026-04-27T08:47:01 CEST" duration-ms="6924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUser -->
-        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:41 CEST" name="setupUser" finished-at="2026-04-27T08:36:49 CEST" duration-ms="7401" status="PASS">
+        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:46:54 CEST" name="setupUser" finished-at="2026-04-27T08:47:00 CEST" duration-ms="5854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUser -->
-        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:41 CEST" name="setupUser" finished-at="2026-04-27T08:36:47 CEST" duration-ms="5538" status="PASS">
+        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:46:54 CEST" name="setupUser" finished-at="2026-04-27T08:46:59 CEST" duration-ms="5235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUser -->
-        <test-method signature="deleteUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:47 CEST" name="deleteUserTest" finished-at="2026-04-27T08:36:48 CEST" duration-ms="911" status="PASS">
+        <test-method signature="deleteUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:46:59 CEST" name="deleteUserTest" finished-at="2026-04-27T08:47:00 CEST" duration-ms="538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUserTest -->
-        <test-method signature="getUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:48 CEST" name="getUserTest" finished-at="2026-04-27T08:36:48 CEST" duration-ms="443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserTest -->
-        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:48 CEST" name="cleanupUser" finished-at="2026-04-27T08:36:48 CEST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanupUser -->
-        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:48 CEST" name="setupUser" finished-at="2026-04-27T08:36:49 CEST" duration-ms="820" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUser -->
-        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:48 CEST" name="cleanupUser" finished-at="2026-04-27T08:36:49 CEST" duration-ms="799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanupUser -->
-        <test-method signature="getInvalidUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:49 CEST" name="getInvalidUserTest" finished-at="2026-04-27T08:36:50 CEST" duration-ms="838" status="PASS">
+        <test-method signature="getInvalidUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:00 CEST" name="getInvalidUserTest" finished-at="2026-04-27T08:47:00 CEST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getInvalidUserTest -->
-        <test-method signature="updateUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:49 CEST" name="updateUserTest" finished-at="2026-04-27T08:36:49 CEST" duration-ms="460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUserTest -->
-        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:49 CEST" name="cleanupUser" finished-at="2026-04-27T08:36:50 CEST" duration-ms="842" status="PASS">
+        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:00 CEST" name="cleanupUser" finished-at="2026-04-27T08:47:00 CEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanupUser -->
-        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:36:50 CEST" name="cleanupUser" finished-at="2026-04-27T08:36:50 CEST" duration-ms="518" status="PASS">
+        <test-method is-config="true" signature="setupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:00 CEST" name="setupUser" finished-at="2026-04-27T08:47:00 CEST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupUser -->
+        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:00 CEST" name="cleanupUser" finished-at="2026-04-27T08:47:01 CEST" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupUser -->
+        <test-method signature="updateUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:00 CEST" name="updateUserTest" finished-at="2026-04-27T08:47:01 CEST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:01 CEST" name="cleanupUser" finished-at="2026-04-27T08:47:01 CEST" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupUser -->
+        <test-method signature="getUserTest()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:01 CEST" name="getUserTest" finished-at="2026-04-27T08:47:01 CEST" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserTest -->
+        <test-method is-config="true" signature="cleanupUser()[pri:0, instance:tests.UserApiTests@448c8166]" started-at="2026-04-27T08:47:01 CEST" name="cleanupUser" finished-at="2026-04-27T08:47:02 CEST" duration-ms="806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanupUser -->

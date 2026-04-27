@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="9.972" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="9.571" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.19\bin"/>
-    <property name="sun.java.command" value="C:\Users\nitya\AppData\Local\Temp\surefire6536254244345031483\surefirebooter-20260427083640496_3.jar C:\Users\nitya\AppData\Local\Temp\surefire6536254244345031483 2026-04-27T08-36-40_271-jvmRun1 surefire-20260427083640496_1tmp surefire_0-20260427083640496_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\nitya\AppData\Local\Temp\surefire3201831794556499449\surefirebooter-20260427084652882_3.jar C:\Users\nitya\AppData\Local\Temp\surefire3201831794556499449 2026-04-27T08-46-52_685-jvmRun1 surefire-20260427084652882_1tmp surefire_0-20260427084652882_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\nitya\api-automation-framework\target\test-classes;C:\Users\nitya\api-automation-framework\target\classes;C:\Users\nitya\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\nitya\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\nitya\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\nitya\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\nitya\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\nitya\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\nitya\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\nitya\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\nitya\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\nitya\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\nitya\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\nitya\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\nitya\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\nitya\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\nitya\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\nitya\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\nitya\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\nitya\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\nitya\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\nitya\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\nitya\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\nitya\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\nitya\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\nitya\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\nitya\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\nitya\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\nitya\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\nitya\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\nitya\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\nitya\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\nitya\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\nitya\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\nitya\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\nitya\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\nitya\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\nitya\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\nitya\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\nitya\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\nitya\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\nitya\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\nitya\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\nitya\.m2\repository\io\qameta\allure\allure-rest-assured\2.29.1\allure-rest-assured-2.29.1.jar;C:\Users\nitya\.m2\repository\io\qameta\allure\allure-attachments\2.29.1\allure-attachments-2.29.1.jar;C:\Users\nitya\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\nitya\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\nitya\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\nitya\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\nitya\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;C:\Users\nitya\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\nitya\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\nitya\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\nitya\AppData\Local\Temp\surefire6536254244345031483\surefirebooter-20260427083640496_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\nitya\AppData\Local\Temp\surefire3201831794556499449\surefirebooter-20260427084652882_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.19+9-LTS-183"/>
@@ -58,46 +58,46 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="deleteUserTest" classname="tests.UserApiTests" time="0.07">
-    <system-out><![CDATA[08:36:41.460 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\nitya\api-automation-framework\src\test\resources\testng.xml"
-08:36:41.534 [main] WARN org.testng.xml.TestNGContentHandler -- It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\nitya\api-automation-framework\src\test\resources\testng.xml] otherwise TestNG may fail or not work as expected.
-08:36:41.611 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-08:36:41.611 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-08:36:41.612 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-08:36:41.614 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-08:36:41.614 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-08:36:41.614 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+  <testcase name="deleteUserTest" classname="tests.UserApiTests" time="0.049">
+    <system-out><![CDATA[08:46:53.806 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\nitya\api-automation-framework\src\test\resources\testng.xml"
+08:46:53.867 [main] WARN org.testng.xml.TestNGContentHandler -- It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\nitya\api-automation-framework\src\test\resources\testng.xml] otherwise TestNG may fail or not work as expected.
+08:46:53.941 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+08:46:53.942 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+08:46:53.943 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+08:46:53.944 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+08:46:53.945 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+08:46:53.945 [main] WARN org.testng.TestNG -- Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
 ==== TEST SUITE STARTED ====
-🔁 Retry creating user: 1
-🔁 Retry creating user: 1
-🆔 Created User ID: 8450562
+🔁 Attempt 1 creating user...
+🔁 Attempt 1 creating user...
+🆔 Created User ID: 8450582
  STARTED: deleteUserTest
-🆔 Created User ID: 8450563
-🔁 Retry creating user: 2
- STARTED: getUserTest
-✔ Deleted User ID: 8450562
+🆔 Created User ID: 8450584
+ STARTED: getInvalidUserTest
+✔ Deleted User ID: 8450582
  PASSED: deleteUserTest
 ]]></system-out>
   </testcase>
-  <testcase name="getUserTest" classname="tests.UserApiTests" time="0.449">
-    <system-out><![CDATA[✔ Fetched User ID: 8450563
- PASSED: getUserTest
+  <testcase name="getInvalidUserTest" classname="tests.UserApiTests" time="0.398">
+    <system-out><![CDATA[🔁 Attempt 2 creating user...
+✔ Negative test passed
+ PASSED: getInvalidUserTest
 ]]></system-out>
   </testcase>
-  <testcase name="updateUserTest" classname="tests.UserApiTests" time="0.46">
-    <system-out><![CDATA[🧹 Cleaning user: 8450563
-🆔 Created User ID: 8450565
- STARTED: getInvalidUserTest
-🆔 Created User ID: 8450566
+  <testcase name="updateUserTest" classname="tests.UserApiTests" time="0.456">
+    <system-out><![CDATA[🧹 Cleaning user: 8450584
+🆔 Created User ID: 8450585
  STARTED: updateUserTest
-✔ Updated User ID: 8450566
+✔ Updated User ID: 8450585
  PASSED: updateUserTest
 ]]></system-out>
   </testcase>
-  <testcase name="getInvalidUserTest" classname="tests.UserApiTests" time="0.79">
-    <system-out><![CDATA[🧹 Cleaning user: 8450566
-✔ Negative test passed
- PASSED: getInvalidUserTest
+  <testcase name="getUserTest" classname="tests.UserApiTests" time="0.762">
+    <system-out><![CDATA[🧹 Cleaning user: 8450585
+🆔 Created User ID: 8450586
+ STARTED: getUserTest
+✔ Fetched User ID: 8450586
+ PASSED: getUserTest
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -57,7 +57,7 @@ public class UserApiTests {
                         }
 
                         retry++;
-                        System.out.println("🔁 Retry creating user: " + retry);
+                        System.out.println("🔁 Attempt " + retry + " creating user...");
                 }
 
                 Assert.assertNotNull(userId.get(), "User creation failed in setup");
