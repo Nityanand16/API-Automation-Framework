@@ -13,7 +13,7 @@ public class ConfigReader {
             FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
             props.load(fis);
         } catch (IOException e) {
-            throw new RuntimeException("❌ Failed to load config.properties", e);
+            throw new RuntimeException(" Failed to load config.properties", e);
         }
     }
 
@@ -21,7 +21,7 @@ public class ConfigReader {
         String value = props.getProperty(key);
 
         if (value == null) {
-            throw new RuntimeException("❌ Property not found: " + key);
+            throw new RuntimeException(" Property not found: " + key);
         }
 
         return value;

@@ -1,6 +1,6 @@
 base\BaseTest.class
 tests\UserApiTests.class
-extent\ExtentManager.class
+utils\RetryAnalyzer.class
 listeners\TestListener.class
-retry\RetryAnalyzer.class
+utils\AllureRestFilter.class
 listeners\RetryListener.class

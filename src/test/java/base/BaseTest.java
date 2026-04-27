@@ -16,12 +16,12 @@ public class BaseTest {
 
         RestAssured.baseURI = ConfigReader.get("base.url");
 
-        log.info("🚀 API Test Execution Started");
+        log.info(" API Test Execution Started");
         log.info("Base URI: " + RestAssured.baseURI);
     }
 
     @AfterClass
     public void tearDown() {
-        log.info("✅ API Test Execution Completed");
+        log.info(" API Test Execution Completed");
     }
 }

@@ -27,7 +27,7 @@ public class DataFactory {
         return ThreadLocalRandom.current().nextBoolean() ? "active" : "inactive";
     }
 
-    // 🔥 FULL USER OBJECT (BEST PRACTICE)
+    // FULL USER OBJECT (BEST PRACTICE)
     public static User createUser() {
         User user = new User();
         user.setName(getRandomName());
@@ -37,7 +37,7 @@ public class DataFactory {
         return user;
     }
 
-    // 🔥 UPDATE USER OBJECT (for PUT requests)
+    // UPDATE USER OBJECT (for PUT requests)
     public static User updateUser() {
         User user = new User();
         user.setName("Updated_" + UUID.randomUUID().toString().substring(0, 4));

@@ -1,24 +1,26 @@
 package utils;
 
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class ResponseUtils {
 
     public static Integer extractId(Response response) {
         try {
-            JsonPath jsonPath = response.jsonPath();
+            Object idObj = response.jsonPath().get("id");
 
-            Object idObj = jsonPath.get("id");
+            if (idObj == null)
+                return null;
 
-            if (idObj == null) {
+            String idStr = idObj.toString();
+
+            if (idStr.equalsIgnoreCase("null") || idStr.equals("[null]") || idStr.isEmpty()) {
                 return null;
             }
 
-            return Integer.parseInt(idObj.toString());
+            return Integer.valueOf(idStr);
 
         } catch (Exception e) {
-            System.out.println("⚠️ ID extraction failed: " + e.getMessage());
+            System.out.println(" ID extraction failed: " + e.getMessage());
             return null;
         }
     }

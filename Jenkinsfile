@@ -40,11 +40,11 @@ pipeline {
         }
 
         success {
-            echo 'API Tests Passed Successfully 🎉'
+            echo 'API Tests Passed Successfully '
         }
 
         failure {
-            echo 'API Tests Failed ❌ Check logs'
+            echo 'API Tests Failed Check logs'
         }
     }
 }

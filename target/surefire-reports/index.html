@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-API_Suite" class="show-methods passed suite-API_Suite"> (show)</a> <!-- show-methods passed suite-API_Suite -->
                     </span>
                     <div class="method-list-content passed suite-API_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-API_Suite" title="tests.UserApiTests" class="method navigator-link" hash-for-method="createUserTest">createUserTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-API_Suite" title="tests.UserApiTests" class="method navigator-link" hash-for-method="deleteUserTest">deleteUserTest</a> <!-- method navigator-link -->
@@ -144,13 +139,6 @@
               <span class="class-name">tests.UserApiTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUserTest">
-                  </a> <!-- createUserTest -->
-                  <span class="method-name">createUserTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="deleteUserTest">
@@ -237,32 +225,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createUserTest')
+data.setCell(0, 1, 'deleteUserTest')
 data.setCell(0, 2, 'tests.UserApiTests')
-data.setCell(0, 3, 7321);
+data.setCell(0, 3, 911);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getInvalidUserTest')
 data.setCell(1, 2, 'tests.UserApiTests')
-data.setCell(1, 3, 6317);
+data.setCell(1, 3, 838);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteUserTest')
+data.setCell(2, 1, 'updateUserTest')
 data.setCell(2, 2, 'tests.UserApiTests')
-data.setCell(2, 3, 1925);
+data.setCell(2, 3, 460);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'getUserTest')
 data.setCell(3, 2, 'tests.UserApiTests')
-data.setCell(3, 3, 1920);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'updateUserTest')
-data.setCell(4, 2, 'tests.UserApiTests')
-data.setCell(4, 3, 1825);
+data.setCell(3, 3, 443);
 window.suiteTableData['API_Suite']= { tableData: data, tableDiv: 'times-div-API_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-API_Suite">
               </div> <!-- times-div-API_Suite -->
             </div> <!-- times-div -->
@@ -289,26 +273,54 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UserApiTests</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getInvalidUserTest</span>
+              <div class="configuration-method before">
+                <span class="method-name">setupUser</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupUser</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupUser</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createUserTest</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">deleteUserTest</span>
+                <span class="method-start">5694 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserTest</span>
-                <span class="method-start">7342 ms</span>
+                <span class="method-start">6540 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupUser</span>
+                <span class="method-start">6635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupUser</span>
+                <span class="method-start">6647 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupUser</span>
+                <span class="method-start">6989 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">deleteUserTest</span>
-                <span class="method-start">7342 ms</span>
+                <span class="method-name">getInvalidUserTest</span>
+                <span class="method-start">7422 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateUserTest</span>
-                <span class="method-start">7343 ms</span>
+                <span class="method-start">7472 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupUser</span>
+                <span class="method-start">7943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupUser</span>
+                <span class="method-start">8267 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

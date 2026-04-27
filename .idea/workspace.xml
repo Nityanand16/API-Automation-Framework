@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec880871-6fd5-4c69-b0e8-37cfa9b43de5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/target/allure-results/05b57880-9c10-4bd2-999e-656794328893-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/05e55406-8937-40de-b7c6-c51229693c34-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/079a47b1-8fa7-4441-aae6-e1f0deb1cd92-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0b48cc01-7c84-43b8-afd8-ced1bf75318a-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/139e9820-5363-430c-abdf-14c76af2fdaa-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1e4156eb-c929-4519-b5fb-86640bab8896-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/28ea57a5-e792-403b-9d49-8751ffc49ee2-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2af0c887-5107-49d6-b563-31d329585bd3-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2ca3254b-d0a3-4840-a15e-ae70f595996d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2e45ee38-6852-4b75-9e62-c2cbd4b90f52-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2f987ed9-4b25-4d4d-8f07-3542dc1967cc-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/32f416bd-e33e-48db-ad78-d8dd97c49fb2-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3a7e54ab-35d9-4c1f-b1db-85573e5e1ee3-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5d7a1b1a-9273-4b68-9cc7-067e6d089d3c-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/60026663-c51c-4744-b99e-37bc5269f638-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6133c52c-4551-4e1a-8a94-fc7c554db6df-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/84077f09-0c2e-4111-9128-a1de18791225-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/95de09e2-beee-4e7a-a244-f355fb04d270-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9fe81372-1709-4e1a-b451-dadbd83f4edf-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a9183728-6479-4525-b5fa-381e6ac73fe7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a96cb4ca-284e-472e-80fa-2fd5650fc205-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bf6e8e1a-2368-4adb-8947-8a81d68140ec-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c8bdab5f-09bd-47a2-a850-5419e76b7c86-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ca3f7207-00fe-4c7f-8fe9-586bb6bab1dc-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ce128e4e-9b3c-41db-8eec-ac909b47c060-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d2262daf-504f-46b4-8b9b-974aa20f1e5d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/dff7828b-001a-4d4f-b7ec-7fcd68744774-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e150b22a-ec88-4f6d-842d-2d5fe11d43a3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e4b73746-3897-499d-a089-52ed6d373bc2-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ff5f3570-8207-45c6-a230-5be4ef190618-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/API Suite/User API Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/API Suite/User API Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/API Suite/User API Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/API Suite/User API Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.UserApiTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.UserApiTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3CteEcLAwtdNNoAmlrJS5IIQYYh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG.<default>.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nitya/api-automation-framework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="api-automation-framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.&lt;default&gt;" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec880871-6fd5-4c69-b0e8-37cfa9b43de5" name="Changes" comment="" />
+      <created>1777209184717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777209184717</updated>
+      <workItem from="1777209192767" duration="674000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

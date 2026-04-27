@@ -1,104 +1,128 @@
 package tests;
 
 import client.ApiClient;
-import io.qameta.allure.Description;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import utils.ResponseUtils;
+import utils.RetryAnalyzer;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Feature("User API Tests")
 public class UserApiTests {
 
-        private Integer userId; // stores created user ID for reuse
+        // 🔥 Thread-safe user storage (important for parallel execution)
+        private final ThreadLocal<Integer> userId = new ThreadLocal<>();
 
-        // =========================
-        // 1. CREATE USER
-        // =========================
-        @Test(priority = 1)
-        @Story("Create User")
-        @Description("Create a new user and store user ID")
-        public void createUserTest() {
+        // 🔹 Create payload dynamically
+        private Map<String, Object> createUserPayload() {
+                Map<String, Object> payload = new HashMap<>();
+                long timestamp = System.currentTimeMillis();
 
-                // Step 1: Create request payload
-                Map<String, Object> requestBody = new HashMap<>();
-                requestBody.put("name", "User_" + System.currentTimeMillis());
-                requestBody.put("email", "user_" + System.currentTimeMillis() + "@mail.com");
-                requestBody.put("gender", "male");
-                requestBody.put("status", "active");
+                payload.put("name", "TestUser_" + timestamp);
+                payload.put("email", "testuser_" + timestamp + "@mail.com");
+                payload.put("gender", "male");
+                payload.put("status", "active");
 
-                // Step 2: Call API
-                Response response = ApiClient.post("/users", requestBody);
-
-                // Step 3: Validate response
-                Assert.assertEquals(response.getStatusCode(), 201, "User not created");
-
-                // Step 4: Extract user ID
-                userId = ResponseUtils.extractId(response);
-                Assert.assertNotNull(userId, "User ID is null");
+                return payload;
         }
 
-        // =========================
-        // 2. GET USER
-        // =========================
-        @Test(priority = 2, dependsOnMethods = "createUserTest")
-        @Story("Get User")
-        @Description("Fetch created user by ID")
+        // 🔹 Update payload
+        private Map<String, Object> updateUserPayload() {
+                Map<String, Object> payload = new HashMap<>();
+                payload.put("name", "UpdatedUser");
+                payload.put("status", "inactive");
+                return payload;
+        }
+
+        // 🔥 SETUP (retry-safe + parallel-safe)
+        @BeforeMethod(alwaysRun = true)
+        public void setupUser() {
+
+                int retry = 0;
+                int maxRetry = 3;
+                Response response;
+                Integer id = null;
+
+                while (retry < maxRetry) {
+
+                        response = ApiClient.post("/users", createUserPayload());
+
+                        id = ResponseUtils.extractId(response);
+
+                        if (id != null) {
+                                userId.set(id);
+                                break;
+                        }
+
+                        retry++;
+                        System.out.println("🔁 Retry creating user: " + retry);
+                }
+
+                Assert.assertNotNull(userId.get(), "User creation failed in setup");
+                System.out.println("🆔 Created User ID: " + userId.get());
+        }
+
+        // 🔥 CLEANUP (safe for parallel + always runs)
+        @AfterMethod(alwaysRun = true)
+        public void cleanupUser() {
+
+                Integer id = userId.get();
+
+                if (id != null) {
+                        System.out.println("🧹 Cleaning user: " + id);
+                        try {
+                                ApiClient.delete("/users/" + id);
+                        } catch (Exception e) {
+                                System.out.println("⚠ Cleanup failed: " + e.getMessage());
+                        }
+                }
+
+                userId.remove();
+        }
+
+        // 🔹 GET user test
+        @Test(retryAnalyzer = RetryAnalyzer.class)
         public void getUserTest() {
 
-                Response response = ApiClient.get("/users/" + userId);
+                Response response = ApiClient.get("/users/" + userId.get());
 
-                Assert.assertEquals(response.getStatusCode(), 200, "User not found");
+                Assert.assertEquals(response.statusCode(), 200, "Get user failed");
+                System.out.println("✔ Fetched User ID: " + userId.get());
         }
 
-        // =========================
-        // 3. UPDATE USER
-        // =========================
-        @Test(priority = 3, dependsOnMethods = "createUserTest")
-        @Story("Update User")
-        @Description("Update existing user details")
+        // 🔹 UPDATE user test
+        @Test(retryAnalyzer = RetryAnalyzer.class)
         public void updateUserTest() {
 
-                Map<String, Object> requestBody = new HashMap<>();
-                requestBody.put("name", "UpdatedUser_" + System.currentTimeMillis());
-                requestBody.put("email", "updated_" + System.currentTimeMillis() + "@mail.com");
-                requestBody.put("status", "active");
+                Response response = ApiClient.put(
+                                "/users/" + userId.get(),
+                                updateUserPayload());
 
-                Response response = ApiClient.put("/users/" + userId, requestBody);
-
-                Assert.assertEquals(response.getStatusCode(), 200, "User update failed");
+                Assert.assertEquals(response.statusCode(), 200, "User update failed");
+                System.out.println("✔ Updated User ID: " + userId.get());
         }
 
-        // =========================
-        // 4. DELETE USER
-        // =========================
-        @Test(priority = 4, dependsOnMethods = "createUserTest")
-        @Story("Delete User")
-        @Description("Delete created user")
+        // 🔹 DELETE user test
+        @Test(retryAnalyzer = RetryAnalyzer.class)
         public void deleteUserTest() {
 
-                Response response = ApiClient.delete("/users/" + userId);
+                Response response = ApiClient.delete("/users/" + userId.get());
 
-                Assert.assertEquals(response.getStatusCode(), 204, "User deletion failed");
+                Assert.assertEquals(response.statusCode(), 204, "User delete failed");
+                System.out.println("✔ Deleted User ID: " + userId.get());
+
+                userId.remove(); // avoid double cleanup
         }
 
-        // =========================
-        // 5. NEGATIVE TEST
-        // =========================
-        @Test(priority = 5)
-        @Story("Negative Test")
-        @Description("Validate invalid user ID returns error")
+        // 🔹 NEGATIVE test (no dependency)
+        @Test
         public void getInvalidUserTest() {
 
                 Response response = ApiClient.get("/users/999999999");
 
-                Assert.assertTrue(
-                                response.getStatusCode() == 404 || response.getStatusCode() == 400,
-                                "Unexpected response for invalid user");
+                Assert.assertEquals(response.statusCode(), 404, "Invalid user test failed");
+                System.out.println("✔ Negative test passed");
         }
 }

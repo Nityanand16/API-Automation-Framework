@@ -9,23 +9,41 @@ import io.restassured.specification.RequestSpecification;
 
 public class ApiClient {
 
+    private static final AllureRestAssured ALLURE_FILTER = new AllureRestAssured();
+
     private static String getBaseUrl() {
         return ConfigManager.get("base.url");
     }
 
+    private static String getToken() {
+        String token = ConfigManager.get("token");
+        return (token != null) ? token : "";
+    }
+
+    /**
+     * Thread-safe request builder
+     */
     private static RequestSpecification request() {
-        return RestAssured
+
+        RequestSpecification spec = RestAssured
                 .given()
                 .baseUri(getBaseUrl())
-                .header("Authorization", "Bearer " + ConfigManager.get("token"))
                 .contentType("application/json")
-                .filter(new AllureRestAssured()); // keeps REST logs in report
+                .accept("application/json")
+                .filter(ALLURE_FILTER);
+
+        // attach token only if present
+        if (!getToken().isEmpty()) {
+            spec.header("Authorization", "Bearer " + getToken());
+        }
+
+        return spec;
     }
 
     public static Response post(String endpoint, Object body) {
 
         Allure.step("POST " + endpoint);
-        Allure.addAttachment("Request Body", body != null ? body.toString() : "null");
+        attachRequest(body);
 
         Response response = request()
                 .body(body)
@@ -49,7 +67,7 @@ public class ApiClient {
     public static Response put(String endpoint, Object body) {
 
         Allure.step("PUT " + endpoint);
-        Allure.addAttachment("Request Body", body != null ? body.toString() : "null");
+        attachRequest(body);
 
         Response response = request()
                 .body(body)
@@ -70,8 +88,24 @@ public class ApiClient {
         return response;
     }
 
+    private static void attachRequest(Object body) {
+        Allure.addAttachment(
+                "Request Body",
+                body != null ? body.toString() : "null");
+    }
+
     private static void attachResponse(Response response) {
-        Allure.addAttachment("Status Code", String.valueOf(response.getStatusCode()));
-        Allure.addAttachment("Response Body", response.getBody().asPrettyString());
+        if (response == null) {
+            Allure.addAttachment("Response", "NULL RESPONSE");
+            return;
+        }
+
+        Allure.addAttachment("Status Code",
+                String.valueOf(response.getStatusCode()));
+
+        Allure.addAttachment("Response Body",
+                response.getBody() != null
+                        ? response.getBody().asPrettyString()
+                        : "EMPTY BODY");
     }
 }
